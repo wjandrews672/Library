@@ -1,7 +1,18 @@
+const bookHolder = document.querySelector('#bookshelf');
 
+//create elements
+const bookDiv = document.createElement("div");
+bookDiv.className = "bookCard";
+// bookHolder.appendChild(bookDiv);
+
+const title = document.createElement("div");
+const author = document.createElement("div");
+const pageCount = document.createElement("div");
+const read = document.createElement("button");
+const remove = document.createElement("button");
 
 let myLibrary = [];
-
+//book constructor
 function book (title, author, pages, read) {
     this.title = title
     this.author = author
@@ -24,8 +35,14 @@ const Tommyknockers = new book('Tommyknockers', 'Stephen King', '700', 'finished
 function displayLibrary(array) {
     // loop through myLibrary array and displays on page
     for (let i = 0; i < array.length; i++) {
-        // array[i] =
-        // use this.value for each value
+        //for every book, create a div element with bookcard class and append onto bookHolder div
+        bookDiv;
+        bookDiv.className = "bookcard";
+        bookHolder.appendChild(bookDiv);
+        console.log(Object.values(array[i]))//not appending??
+        //then create a div for every value and append it to new bookcard div
+
+        // use this.value for each value as .textcontent
     }
 }
 
