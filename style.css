@@ -30,3 +30,11 @@ h1{
     width: 200px;
     height: 300px;
 }
+
+#form {
+    display: none;
+}
+
+#formContainer{
+    /* display: none; */
+}

@@ -1,5 +1,6 @@
 const bookHolder = document.querySelector('#bookshelf');
-
+const addBook = document.querySelector('#popup');
+const submitbtn = document.querySelector('#submitBtn');
 //create elements
 // const bookDiv = document.createElement("div");
 // bookDiv.className = "bookCard";
@@ -35,8 +36,8 @@ const Fisherman = new book('The fisherman', 'John Langan', '500', 'finished read
 const Indians = new book('The only good Indians', 'Stephen Graham Jones', '400', 'finished reading');
 const Tommyknockers = new book('Tommyknockers', 'Stephen King', '700', 'finished reading');
 
-add button and form to fill out book constructor
-push to myLibrary
+// add button and form to fill out book constructor
+// push to myLibrary
 
 function displayLibrary(array) {
     // loop through myLibrary array and displays on page
@@ -67,3 +68,16 @@ function displayLibrary(array) {
         remove.textContent = 'Remove';
     }
 }
+
+function openForm() {
+    const form = document.querySelector('#form')
+    form.style.display = 'block';
+}
+
+function closeForm() {
+    const form = document.querySelector('#form')
+    form.style.display = 'block';
+}
+
+addBook.addEventListener('click', openForm);
+submitbtn.addEventListener('click', closeForm);
