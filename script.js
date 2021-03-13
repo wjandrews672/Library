@@ -25,6 +25,8 @@ function book (title, author, pages, read) {
     this.info = function() {
         return `${title} by ${author}, ${pages} pages, ${read}`
     }
+    // console.log(book)
+    //connect to addToLibrary function
 }
 
 function addToLibrary(book) {
@@ -68,15 +70,23 @@ function displayLibrary(array) {
         remove.textContent = 'Remove';
     }
 }
-
+//make form a pop up box
 function openForm() {
     const form = document.querySelector('#form')
     form.style.display = 'block';
 }
-
+//send info to book constructor
 function closeForm() {
     const form = document.querySelector('#form')
+    let title = document.querySelector('#formTitle').value;
+    let author = document.querySelector('#formAuthor').value;
+    let pages = document.querySelector('#formPage').value;
+    let read = document.querySelector('#formRead').value;
+    let newBook = new book(title, author, pages, read);
+    debugger
+    console.log(newBook);
     form.style.display = 'block';
+    //form grabs data but disapears????
 }
 
 addBook.addEventListener('click', openForm);

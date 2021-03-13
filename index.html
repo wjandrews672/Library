@@ -15,30 +15,30 @@
                     <div class="title">Title: Pet Semetary</div>
                     <div class="author">Author: Stephen King</div>
                     <div class="PageCount">Page Count: 457</div>
-                    <button class="read">Read?</button>
-                    <button class="remove">Remove</button>
+                    <button class= "btn" id="read">Read?</button>
+                    <button class= "btn" id="remove">Remove</button>
                 </div>
                 
                 
             </div>
         <button id="popup">Add Book</button>
-        <div id="form">
+        <div class="form-popup" id="form">
             <form id ="formContainer">
                 <h1>Add Book</h1>
                 
                 <label for="title"></label>
-                <input type="text" placeholder="Title" required>
+                <input type="text" id="formTitle" class="textbox" placeholder="Title" required>
 
                 <label for="author"></label>
-                <input type="text" placeholder="author" required>
+                <input type="text" id="formAuthor" class="textbox" placeholder="author" required>
 
                 <label for="PageCount"></label>
-                <input type="text" placeholder="Page count" required>
+                <input type="text" id="formPage" class="textbox" placeholder="Page count" required>
 
                 <label for="read"></label>
-                <input type="text" placeholder="read?" required>
+                <input type="text" id="formRead" class="textbox" placeholder="read?" required>
 
-                <button type="submit" id="submitBtn">Submit</button>
+                <button type="submit" class="btn" id="submitBtn">Submit</button>
 
             </form>
         </div>
